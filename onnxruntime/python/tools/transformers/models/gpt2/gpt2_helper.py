@@ -527,7 +527,7 @@ class Gpt2Helper:
             model_type="gpt2",
             num_heads=num_attention_heads,
             hidden_size=hidden_size,
-            opt_level=0,
+            opt_level=99,
             optimization_options=optimization_options,
             use_gpu=True,
         )
