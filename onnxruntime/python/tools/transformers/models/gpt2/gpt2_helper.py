@@ -530,7 +530,7 @@ class Gpt2Helper:
             opt_level=99,
             optimization_options=optimization_options,
             use_gpu=True,
-            only_onnxruntime=True,
+            only_onnxruntime=False,
         )
 
         if is_float16:
