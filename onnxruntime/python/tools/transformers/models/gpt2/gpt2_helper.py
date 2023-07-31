@@ -521,7 +521,7 @@ class Gpt2Helper:
         from optimizer import optimize_model
 
         optimization_options = FusionOptions("gpt2")
-
+        print("OVERWRITE use_gpu to True")
         m = optimize_model(
             onnx_model_path,
             model_type="gpt2",
@@ -529,7 +529,7 @@ class Gpt2Helper:
             hidden_size=hidden_size,
             opt_level=0,
             optimization_options=optimization_options,
-            use_gpu=False,
+            use_gpu=True,
         )
 
         if is_float16:
